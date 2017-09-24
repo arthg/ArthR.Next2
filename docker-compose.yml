@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  arthr.next2:
+    image: arthr.next2
+    build:
+      context: ./ArthR.Next2
+      dockerfile: Dockerfile
