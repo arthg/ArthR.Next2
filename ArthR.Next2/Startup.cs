@@ -13,6 +13,8 @@ namespace ArthR.Next2
 
         public void Configure(IApplicationBuilder app)
         {
+            app.UseFileServer();
+
             app.UseSignalR(routes =>
             {
                 routes.MapHub<ChatHub>("chat");
