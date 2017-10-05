@@ -11,7 +11,10 @@ namespace ArthR.Next2
             services.AddSignalR();
         }
 
-        public void Configure(IApplicationBuilder app)
+        // intentionally breaking
+        // if I ever get back to this - see:
+        // https://weblogs.asp.net/ricardoperes/signalr-in-asp-net-core?WT.mc_id=DX_MVP4025064&utm_campaign=dotNET%20Weekly&utm_medium=email&utm_source=week__year_
+        public void Confi gure(IApplicationBuilder app)
         {
             app.UseFileServer();
 
